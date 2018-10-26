@@ -1,0 +1,95 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 222 10/21/2009 SJ Web Edition
+# Date created = 20:48:02  October 17, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ProjetoHARD_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Stratix II"
+set_global_assignment -name DEVICE AUTO
+set_global_assignment -name TOP_LEVEL_ENTITY Div
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:48:02  OCTOBER 17, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name VECTOR_WAVEFORM_FILE ../MIPS/jesusNosAjude.vwf
+set_global_assignment -name VERILOG_FILE Controle.v
+set_global_assignment -name VERILOG_FILE J5B.v
+set_global_assignment -name VERILOG_FILE QuantidadeDeBits.v
+set_global_assignment -name VERILOG_FILE ALUOut.v
+set_global_assignment -name VERILOG_FILE MuxRegDesl.v
+set_global_assignment -name VERILOG_FILE CaixaLui.v
+set_global_assignment -name VERILOG_FILE Div.v
+set_global_assignment -name VERILOG_FILE EPC.v
+set_global_assignment -name VERILOG_FILE ExtensorBits1.v
+set_global_assignment -name VERILOG_FILE ExtensorSinal16.v
+set_global_assignment -name VERILOG_FILE ExtensorSinal26.v
+set_global_assignment -name VERILOG_FILE MuxULA1.v
+set_global_assignment -name VERILOG_FILE J20B.v
+set_global_assignment -name VERILOG_FILE J26B.v
+set_global_assignment -name VERILOG_FILE Juncao.v
+set_global_assignment -name VERILOG_FILE MuxWriteR.v
+set_global_assignment -name VERILOG_FILE Mult.v
+set_global_assignment -name VERILOG_FILE MuxHi.v
+set_global_assignment -name VERILOG_FILE MuxHiLo.v
+set_global_assignment -name VERILOG_FILE MuxLo.v
+set_global_assignment -name VERILOG_FILE MuxMDR.v
+set_global_assignment -name VERILOG_FILE MuxMemoriaEndereco.v
+set_global_assignment -name VHDL_FILE Banco_reg.vhd
+set_global_assignment -name VERILOG_FILE MuxPC.v
+set_global_assignment -name VERILOG_FILE MuxPCWriteCond.v
+set_global_assignment -name VHDL_FILE Instr_Reg.vhd
+set_global_assignment -name VHDL_FILE Memoria.vhd
+set_global_assignment -name VERILOG_FILE MuxMemoriaEndereço.v
+set_global_assignment -name VERILOG_FILE MUXWriteData.v
+set_global_assignment -name VERILOG_FILE MuxxMemoriaDado.v
+set_global_assignment -name VHDL_FILE RegDesloc.vhd
+set_global_assignment -name VERILOG_FILE PC.v
+set_global_assignment -name VERILOG_FILE PCCond.v
+set_global_assignment -name VHDL_FILE Registrador.vhd
+set_global_assignment -name VHDL_FILE ula32.vhd
+set_global_assignment -name VERILOG_FILE ShiftLeft28.v
+set_global_assignment -name VERILOG_FILE ShiftLeft32.v
+set_global_assignment -name VERILOG_FILE MuxULA2.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE MuxULA2.vwf
+set_global_assignment -name BDF_FILE CPU.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Mult.vwf
+set_global_assignment -name VERILOG_FILE booth.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE booth.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE ../MIPS/jesusNosAjude.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

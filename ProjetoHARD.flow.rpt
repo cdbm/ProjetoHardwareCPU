@@ -1,0 +1,119 @@
+Flow report for ProjetoHARD
+Fri Oct 26 01:58:18 2018
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++-------------------------------+----------------------------------------------+
+; Flow Status                   ; Successful - Fri Oct 26 01:58:18 2018        ;
+; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                 ; ProjetoHARD                                  ;
+; Top-level Entity Name         ; Div                                          ;
+; Family                        ; Stratix II                                   ;
+; Met timing requirements       ; Yes                                          ;
+; Logic utilization             ; 5 %                                          ;
+;     Combinational ALUTs       ; 576 / 12,480 ( 5 % )                         ;
+;     Dedicated logic registers ; 176 / 12,480 ( 1 % )                         ;
+; Total registers               ; 176                                          ;
+; Total pins                    ; 132 / 343 ( 38 % )                           ;
+; Total virtual pins            ; 0                                            ;
+; Total block memory bits       ; 0 / 419,328 ( 0 % )                          ;
+; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                               ;
+; Total PLLs                    ; 0 / 6 ( 0 % )                                ;
+; Total DLLs                    ; 0 / 2 ( 0 % )                                ;
+; Device                        ; EP2S15F484C3                                 ;
+; Timing Models                 ; Final                                        ;
++-------------------------------+----------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 10/26/2018 01:57:58 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; ProjetoHARD         ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                   ;
++------------------------+--------------------------------+---------------+-------------+------------+
+; Assignment Name        ; Value                          ; Default Value ; Entity Name ; Section Id ;
++------------------------+--------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID  ; 44883549785425.154052987802648 ; --            ; --          ; --         ;
+; PARTITION_COLOR        ; 16764057                       ; --            ; Div         ; Top        ;
+; PARTITION_NETLIST_TYPE ; SOURCE                         ; --            ; Div         ; Top        ;
+; TOP_LEVEL_ENTITY       ; Div                            ; ProjetoHARD   ; --          ; --         ;
++------------------------+--------------------------------+---------------+-------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis    ; 00:00:05     ; 1.0                     ; 278 MB              ; 00:00:06                           ;
+; Fitter                  ; 00:00:07     ; 1.0                     ; 293 MB              ; 00:00:09                           ;
+; Assembler               ; 00:00:03     ; 1.0                     ; 259 MB              ; 00:00:03                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 195 MB              ; 00:00:01                           ;
+; Total                   ; 00:00:16     ; --                      ; --                  ; 00:00:19                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                          ;
++-------------------------+------------------+---------------+------------+----------------+
+; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
++-------------------------+------------------+---------------+------------+----------------+
+; Analysis & Synthesis    ; DESKTOP-HKJ59VK  ; Windows Vista ; 6.2        ; x86_64         ;
+; Fitter                  ; DESKTOP-HKJ59VK  ; Windows Vista ; 6.2        ; x86_64         ;
+; Assembler               ; DESKTOP-HKJ59VK  ; Windows Vista ; 6.2        ; x86_64         ;
+; Classic Timing Analyzer ; DESKTOP-HKJ59VK  ; Windows Vista ; 6.2        ; x86_64         ;
++-------------------------+------------------+---------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off ProjetoHARD -c ProjetoHARD
+quartus_fit --read_settings_files=off --write_settings_files=off ProjetoHARD -c ProjetoHARD
+quartus_asm --read_settings_files=off --write_settings_files=off ProjetoHARD -c ProjetoHARD
+quartus_tan --read_settings_files=off --write_settings_files=off ProjetoHARD -c ProjetoHARD --timing_analysis_only
+
+
+

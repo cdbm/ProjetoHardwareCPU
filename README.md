@@ -1,2 +1,1 @@
-# ProjetoHardwareCPU
-CPU MIPS
+# MIPS2

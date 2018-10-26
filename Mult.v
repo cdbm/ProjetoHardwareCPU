@@ -1,0 +1,98 @@
+module Mult(input wire MultControl,input wire [31:0] AFio, input wire [31:0] BFio, input wire reset,
+			input wire clk,	output reg [31:0] MultLoFio, output reg [31:0] MultHiFio, 
+			output reg fim);
+//afio M
+//bfio Q
+	
+	reg  Q_1;
+	integer i;
+	reg [64:0] M;
+	reg [64:0] Q;
+	
+	
+always @(posedge clk)
+begin
+	if(reset == 1)
+	begin
+		Q_1 =0;
+		i=0;
+		M = 32'b0;
+		Q = 32'b0;
+		MultHiFio = 32'd0;
+		MultLoFio = 32'd0;
+		
+	end
+
+
+
+	if(MultControl == 1)
+		begin
+		i = 0;
+		M = {AFio,33'd0};
+		Q = {32'd0,BFio, 1'd0};
+		MultHiFio = 32'd0;
+		MultLoFio = 32'd0;
+		fim = 0;
+		
+		end
+	if(MultControl==0)
+	begin
+		if(i<32)
+		begin
+		case(Q[1:0])
+			2'b00:
+			begin	
+				Q = Q >>1;
+				
+			end
+			
+			2'b11:
+			begin			
+				Q = Q >>1;
+				
+			end
+			
+			2'b10:
+			begin
+				Q = Q - M;
+				Q = Q >>1;
+				
+			end
+			
+			2'b01:
+			begin
+				Q = Q + M;
+				Q = Q >>1;
+				
+			end
+			
+		endcase		
+		i = i+1;
+		
+		end
+	end
+		if(i == 32)
+		begin
+			if(Q[64] == 1)
+			begin
+				Q[63] = 1;
+			end
+			
+			if(Q > {1'b0, {32{1'b1}}})
+			begin
+				MultHiFio = Q[64:33];
+				MultLoFio = Q[32:1];
+			end
+			if(Q < {1'b0, {32{1'b1}}})
+			begin
+				MultHiFio = 1'b0;
+				MultLoFio = Q[32:1];
+			end
+			
+			fim =1;
+		end
+	
+end
+	
+endmodule
+
