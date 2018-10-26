@@ -1,0 +1,1075 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 248 592)
+	(text "Controle" (rect 5 0 46 12)(font "Arial" ))
+	(text "inst" (rect 8 560 25 572)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Opcode[5..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "Opcode[5..0]" (rect 21 27 84 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "func[5..0]" (rect 0 0 48 12)(font "Arial" ))
+		(text "func[5..0]" (rect 21 43 69 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "clk[0..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "clk[0..0]" (rect 21 59 61 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "PCWrite[0..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "PCWrite[0..0]" (rect 144 27 211 39)(font "Arial" ))
+		(line (pt 232 32)(pt 216 32)(line_width 3))
+	)
+	(port
+		(pt 232 48)
+		(output)
+		(text "PCWriteCond[0..0]" (rect 0 0 93 12)(font "Arial" ))
+		(text "PCWriteCond[0..0]" (rect 118 43 211 55)(font "Arial" ))
+		(line (pt 232 48)(pt 216 48)(line_width 3))
+	)
+	(port
+		(pt 232 64)
+		(output)
+		(text "PCWriteCondMux[1..0]" (rect 0 0 113 12)(font "Arial" ))
+		(text "PCWriteCondMux[1..0]" (rect 98 59 211 71)(font "Arial" ))
+		(line (pt 232 64)(pt 216 64)(line_width 3))
+	)
+	(port
+		(pt 232 80)
+		(output)
+		(text "MuxBranch[2..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "MuxBranch[2..0]" (rect 131 75 211 87)(font "Arial" ))
+		(line (pt 232 80)(pt 216 80)(line_width 3))
+	)
+	(port
+		(pt 232 96)
+		(output)
+		(text "MuxMemoriaEnd[2..0]" (rect 0 0 106 12)(font "Arial" ))
+		(text "MuxMemoriaEnd[2..0]" (rect 105 91 211 103)(font "Arial" ))
+		(line (pt 232 96)(pt 216 96)(line_width 3))
+	)
+	(port
+		(pt 232 112)
+		(output)
+		(text "IRWrite[0..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "IRWrite[0..0]" (rect 148 107 211 119)(font "Arial" ))
+		(line (pt 232 112)(pt 216 112)(line_width 3))
+	)
+	(port
+		(pt 232 128)
+		(output)
+		(text "RegWrite[0..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "RegWrite[0..0]" (rect 140 123 211 135)(font "Arial" ))
+		(line (pt 232 128)(pt 216 128)(line_width 3))
+	)
+	(port
+		(pt 232 144)
+		(output)
+		(text "RegDst[1..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "RegDst[1..0]" (rect 148 139 211 151)(font "Arial" ))
+		(line (pt 232 144)(pt 216 144)(line_width 3))
+	)
+	(port
+		(pt 232 160)
+		(output)
+		(text "MuxULA1[2..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "MuxULA1[2..0]" (rect 138 155 211 167)(font "Arial" ))
+		(line (pt 232 160)(pt 216 160)(line_width 3))
+	)
+	(port
+		(pt 232 176)
+		(output)
+		(text "ALUControl[2..0]" (rect 0 0 82 12)(font "Arial" ))
+		(text "ALUControl[2..0]" (rect 129 171 211 183)(font "Arial" ))
+		(line (pt 232 176)(pt 216 176)(line_width 3))
+	)
+	(port
+		(pt 232 192)
+		(output)
+		(text "ALUOutControl[0..0]" (rect 0 0 100 12)(font "Arial" ))
+		(text "ALUOutControl[0..0]" (rect 111 187 211 199)(font "Arial" ))
+		(line (pt 232 192)(pt 216 192)(line_width 3))
+	)
+	(port
+		(pt 232 208)
+		(output)
+		(text "DivControl[0..0]" (rect 0 0 79 12)(font "Arial" ))
+		(text "DivControl[0..0]" (rect 132 203 211 215)(font "Arial" ))
+		(line (pt 232 208)(pt 216 208)(line_width 3))
+	)
+	(port
+		(pt 232 224)
+		(output)
+		(text "MuxULA2[2..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "MuxULA2[2..0]" (rect 138 219 211 231)(font "Arial" ))
+		(line (pt 232 224)(pt 216 224)(line_width 3))
+	)
+	(port
+		(pt 232 240)
+		(output)
+		(text "MuxMemoriaDado[1..0]" (rect 0 0 113 12)(font "Arial" ))
+		(text "MuxMemoriaDado[1..0]" (rect 98 235 211 247)(font "Arial" ))
+		(line (pt 232 240)(pt 216 240)(line_width 3))
+	)
+	(port
+		(pt 232 256)
+		(output)
+		(text "AControl[0..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "AControl[0..0]" (rect 143 251 211 263)(font "Arial" ))
+		(line (pt 232 256)(pt 216 256)(line_width 3))
+	)
+	(port
+		(pt 232 272)
+		(output)
+		(text "BControl[0..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "BControl[0..0]" (rect 143 267 211 279)(font "Arial" ))
+		(line (pt 232 272)(pt 216 272)(line_width 3))
+	)
+	(port
+		(pt 232 288)
+		(output)
+		(text "EPCCont[0..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "EPCCont[0..0]" (rect 140 283 211 295)(font "Arial" ))
+		(line (pt 232 288)(pt 216 288)(line_width 3))
+	)
+	(port
+		(pt 232 304)
+		(output)
+		(text "MultControl[0..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "MultControl[0..0]" (rect 130 299 211 311)(font "Arial" ))
+		(line (pt 232 304)(pt 216 304)(line_width 3))
+	)
+	(port
+		(pt 232 320)
+		(output)
+		(text "RDControl[2..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "RDControl[2..0]" (rect 134 315 211 327)(font "Arial" ))
+		(line (pt 232 320)(pt 216 320)(line_width 3))
+	)
+	(port
+		(pt 232 336)
+		(output)
+		(text "MuxRD[0..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "MuxRD[0..0]" (rect 149 331 211 343)(font "Arial" ))
+		(line (pt 232 336)(pt 216 336)(line_width 3))
+	)
+	(port
+		(pt 232 352)
+		(output)
+		(text "MuxSaidaLO[0..0]" (rect 0 0 87 12)(font "Arial" ))
+		(text "MuxSaidaLO[0..0]" (rect 124 347 211 359)(font "Arial" ))
+		(line (pt 232 352)(pt 216 352)(line_width 3))
+	)
+	(port
+		(pt 232 368)
+		(output)
+		(text "MuxSaidaHI[0..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "MuxSaidaHI[0..0]" (rect 127 363 211 375)(font "Arial" ))
+		(line (pt 232 368)(pt 216 368)(line_width 3))
+	)
+	(port
+		(pt 232 384)
+		(output)
+		(text "ContShifts[1..0]" (rect 0 0 79 12)(font "Arial" ))
+		(text "ContShifts[1..0]" (rect 132 379 211 391)(font "Arial" ))
+		(line (pt 232 384)(pt 216 384)(line_width 3))
+	)
+	(port
+		(pt 232 400)
+		(output)
+		(text "MuxWriteData[3..0]" (rect 0 0 95 12)(font "Arial" ))
+		(text "MuxWriteData[3..0]" (rect 116 395 211 407)(font "Arial" ))
+		(line (pt 232 400)(pt 216 400)(line_width 3))
+	)
+	(port
+		(pt 232 416)
+		(output)
+		(text "MuxHILO[0..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "MuxHILO[0..0]" (rect 140 411 211 423)(font "Arial" ))
+		(line (pt 232 416)(pt 216 416)(line_width 3))
+	)
+	(port
+		(pt 232 432)
+		(output)
+		(text "LuiControl[0..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "LuiControl[0..0]" (rect 136 427 211 439)(font "Arial" ))
+		(line (pt 232 432)(pt 216 432)(line_width 3))
+	)
+	(port
+		(pt 232 448)
+		(output)
+		(text "MuxMDR[0..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "MuxMDR[0..0]" (rect 141 443 211 455)(font "Arial" ))
+		(line (pt 232 448)(pt 216 448)(line_width 3))
+	)
+	(port
+		(pt 232 464)
+		(output)
+		(text "ControleBits[2..0]" (rect 0 0 86 12)(font "Arial" ))
+		(text "ControleBits[2..0]" (rect 125 459 211 471)(font "Arial" ))
+		(line (pt 232 464)(pt 216 464)(line_width 3))
+	)
+	(port
+		(pt 232 480)
+		(output)
+		(text "CHi[0..0]" (rect 0 0 44 12)(font "Arial" ))
+		(text "CHi[0..0]" (rect 167 475 211 487)(font "Arial" ))
+		(line (pt 232 480)(pt 216 480)(line_width 3))
+	)
+	(port
+		(pt 232 496)
+		(output)
+		(text "CLo[0..0]" (rect 0 0 46 12)(font "Arial" ))
+		(text "CLo[0..0]" (rect 165 491 211 503)(font "Arial" ))
+		(line (pt 232 496)(pt 216 496)(line_width 3))
+	)
+	(port
+		(pt 232 512)
+		(output)
+		(text "MemRead[0..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "MemRead[0..0]" (rect 136 507 211 519)(font "Arial" ))
+		(line (pt 232 512)(pt 216 512)(line_width 3))
+	)
+	(port
+		(pt 232 528)
+		(output)
+		(text "MDRControl[0..0]" (rect 0 0 86 12)(font "Arial" ))
+		(text "MDRControl[0..0]" (rect 125 523 211 535)(font "Arial" ))
+		(line (pt 232 528)(pt 216 528)(line_width 3))
+	)
+	(parameter
+		"TipoR"
+		"000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Addi"
+		"001000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Beq"
+		"000100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bne"
+		"000101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bgt"
+		"000111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Ble"
+		"000110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lui"
+		"001111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lh"
+		"100001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lw"
+		"100011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lb"
+		"100000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sw"
+		"101011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sh"
+		"101001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sb"
+		"101000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"J"
+		"000010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Jal"
+		"000011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Inc"
+		"010000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Dec"
+		"010001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Add"
+		"100000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sub"
+		"100010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srl"
+		"000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sra"
+		"000011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sll"
+		"000010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Slt"
+		"101010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"And"
+		"100100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Jr"
+		"001000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sllv"
+		"000100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srav"
+		"000111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Break"
+		"001101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Rte"
+		"010011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Addi2"
+		"00000000000000000000000000001001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Addi3"
+		"00000000000000000000000000001010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Add1"
+		"00000000000000000000000000010010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Add2"
+		"00000000000000000000000000010011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Add3"
+		"00000000000000000000000001101110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Add4"
+		"00000000000000000000000001101111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sub1"
+		"00000000000000000000000000011100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sub2"
+		"00000000000000000000000000011101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sub3"
+		"00000000000000000000000011010010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sub4"
+		"00000000000000000000000011010011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srl1"
+		"00000000000000000000000000100110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srl2"
+		"00000000000000000000000000100111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srl3"
+		"00000000000000000000000100110110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srl4"
+		"00000000000000000000000100110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srl5"
+		"00000000000000000000000100111000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sra1"
+		"00000000000000000000000000110000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sra2"
+		"00000000000000000000000000110001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sra3"
+		"00000000000000000000000110011010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sra4"
+		"00000000000000000000000110011011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sra5"
+		"00000000000000000000000110011100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sll1"
+		"00000000000000000000000000111010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sll2"
+		"00000000000000000000000000111011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sll3"
+		"00000000000000000000000111111110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sll4"
+		"00000000000000000000000111111111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sll5"
+		"00000000000000000000001000000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Slt1"
+		"00000000000000000000000001000100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Slt2"
+		"00000000000000000000000001000101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Slt3"
+		"00000000000000000000001001100010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Slt4"
+		"00000000000000000000001001100011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"And1"
+		"00000000000000000000000001001110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"And2"
+		"00000000000000000000000001001111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"And3"
+		"00000000000000000000001011000110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"And4"
+		"00000000000000000000001011000111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Jr1"
+		"00000000000000000000000001011000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Jr2"
+		"00000000000000000000000001011001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Jr3"
+		"00000000000000000000001100101010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Jr4"
+		"00000000000000000000001100101011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sllv1"
+		"00000000000000000000000001100010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sllv2"
+		"00000000000000000000000001100011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sllv3"
+		"00000000000000000000001110001110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sllv4"
+		"00000000000000000000001110001111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sllv5"
+		"00000000000000000000001110010000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srav1"
+		"00000000000000000000000001101100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srav2"
+		"00000000000000000000000001101101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srav3"
+		"00000000000000000000001111110010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srav4"
+		"00000000000000000000001111110011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Srav5"
+		"00000000000000000000001111110100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Break1"
+		"00000000000000000000000001110101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Break2"
+		"00000000000000000000000001110110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Break3"
+		"00000000000000000000000001110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Break4"
+		"00000000000000000000010001010110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Break5"
+		"00000000000000000000010001010111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Rte1"
+		"00000000000000000000000001111111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Beq1"
+		"00000000000000000000000010001001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Beq2"
+		"00000000000000000000000010001010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Beq3"
+		"00000000000000000000000010001011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Beq4"
+		"00000000000000000000010100011110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Beq5"
+		"00000000000000000000010100011111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Beq6"
+		"00000000000000000000010100100000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Beq7"
+		"00000000000000000000010100100001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bne1"
+		"00000000000000000000000010010011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bne2"
+		"00000000000000000000000010010100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bne3"
+		"00000000000000000000000010010101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bne4"
+		"00000000000000000000010110000010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bne5"
+		"00000000000000000000010110000011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bne6"
+		"00000000000000000000010110000100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bne7"
+		"00000000000000000000010110000101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bgt1"
+		"00000000000000000000000010011101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bgt2"
+		"00000000000000000000000010011110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bgt3"
+		"00000000000000000000000010011111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bgt4"
+		"00000000000000000000010111100110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bgt5"
+		"00000000000000000000010111100111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bgt6"
+		"00000000000000000000010111101000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bgt7"
+		"00000000000000000000010111101001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Ble1"
+		"00000000000000000000000010100111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Ble2"
+		"00000000000000000000000010101000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Ble3"
+		"00000000000000000000000010101001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Ble4"
+		"00000000000000000000011001001010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Ble5"
+		"00000000000000000000011001001011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Ble6"
+		"00000000000000000000011001001100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Ble7"
+		"00000000000000000000011001001101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lui1"
+		"00000000000000000000000010110001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lui2"
+		"00000000000000000000000010110010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lui3"
+		"00000000000000000000000010110011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lui4"
+		"00000000000000000000011010101110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lw_Lb_Lh1"
+		"00000000000000000000000010111011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lw_Lb_Lh2"
+		"00000000000000000000000010111100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lw_Lb_Lh3"
+		"00000000000000000000000010111101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lw_Lb_Lh4"
+		"00000000000000000000011100010010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lw_Lb_Lh5"
+		"00000000000000000000011100010011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lw_Lb_Lh6"
+		"00000000000000000000011100010100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lw_Lb_Lh7"
+		"00000000000000000000011100010101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lw_Lb_Lh8"
+		"00000000000000000000011100010110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Lw_Lb_Lh9"
+		"00000000000000000000011100010111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sw1"
+		"00000000000000000000000011000101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sw2"
+		"00000000000000000000000011000110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sw3"
+		"00000000000000000000000011000111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sw4"
+		"00000000000000000000011101110110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sw5"
+		"00000000000000000000011101110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sw6"
+		"00000000000000000000011101111000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sh_Sb1"
+		"00000000000000000000000011001111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sh_Sb2"
+		"00000000000000000000000011010000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sh_Sb3"
+		"00000000000000000000000011010001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sh_Sb4"
+		"00000000000000000000011111011010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sh_Sb5"
+		"00000000000000000000011111011011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Sh_Sb6"
+		"00000000000000000000011111011100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"J1"
+		"00000000000000000000000011110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Jal1"
+		"00000000000000000000000100000001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Jal2"
+		"00000000000000000000000100000010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Jal3"
+		"00000000000000000000000100000011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Inc1"
+		"00000000000000000000000100001011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Inc2"
+		"00000000000000000000000100001100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Inc3"
+		"00000000000000000000000100001101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Inc4"
+		"00000000000000000000101000110010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Inc5"
+		"00000000000000000000101000110011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Inc6"
+		"00000000000000000000101000110100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Inc7"
+		"00000000000000000000101000110101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Inc8"
+		"00000000000000000000101000110110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Inc9"
+		"00000000000000000000101000110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Inc10"
+		"00000000000000000000101000111000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Dec1"
+		"00000000000000000000000100001011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Dec2"
+		"00000000000000000000000100001100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Dec3"
+		"00000000000000000000000100001101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Dec4"
+		"00000000000000000000101000110010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Dec5"
+		"00000000000000000000101000110011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Dec6"
+		"00000000000000000000101000110100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Dec7"
+		"00000000000000000000101000110101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Dec8"
+		"00000000000000000000101000110110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Dec9"
+		"00000000000000000000101000110111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Dec10"
+		"00000000000000000000101000111000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"pc4"
+		"00000000000000000000000000000011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 216 560)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 248 -64 348 16))
+)

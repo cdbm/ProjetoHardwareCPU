@@ -1,0 +1,7 @@
+
+State Machine - |Div|estado
+Name estado.END estado.REPEAT estado.INITIAL estado.WHILE 
+estado.WHILE 0 0 0 0 
+estado.INITIAL 0 0 1 1 
+estado.REPEAT 0 1 0 1 
+estado.END 1 0 0 1 
