@@ -3638,7 +3638,7 @@ parameter pc4 = 32'd3;
                     MuxBranch = 3'b011;
                     MuxMemoriaEnd = 3'd0;
                     IRWrite = 1'd0;
-                    RegWrite = 1'd0;
+                    RegWrite = 1'd1;
                     RegDst = 2'd2;
                     MuxULA1 = 3'd0;
                     ALUControl = 3'd0;
@@ -3668,11 +3668,6 @@ parameter pc4 = 32'd3;
                 end
                
                 Jal2:
-                begin
-                    state = Jal3;
-                end
-               
-                Jal3:
                 begin
                     PCWrite = 1'd0;
                     PCWriteCond = 1'd0;

@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2009 Altera Corporation
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -1970,7 +1970,7 @@ applicable agreement for further details.
 (symbol
 	(rect 5888 2136 6120 2712)
 	(text "Controle" (rect 186 0 227 12)(font "Arial" ))
-	(text "inst53" (rect 195 560 224 572)(font "Arial" ))
+	(text "inst14" (rect 195 560 224 572)(font "Arial" ))
 	(port
 		(pt 232 32)
 		(input)
@@ -2359,6 +2359,26 @@ applicable agreement for further details.
 	(parameter
 		"Rte"
 		"010011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Mult"
+		"011000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Div"
+		"011010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Mfhi"
+		"010000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Mflo"
+		"010010"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
@@ -2963,52 +2983,112 @@ applicable agreement for further details.
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Dec1"
-		"00000000000000000000000100001011"
+		"00000000000000000000000100010101"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Dec2"
-		"00000000000000000000000100001100"
+		"00000000000000000000000100010110"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Dec3"
-		"00000000000000000000000100001101"
+		"00000000000000000000000100010111"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Dec4"
-		"00000000000000000000101000110010"
+		"00000000000000000000101010010110"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Dec5"
-		"00000000000000000000101000110011"
+		"00000000000000000000101010010111"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Dec6"
-		"00000000000000000000101000110100"
+		"00000000000000000000101010011000"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Dec7"
-		"00000000000000000000101000110101"
+		"00000000000000000000101010011001"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Dec8"
-		"00000000000000000000101000110110"
+		"00000000000000000000101010011010"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Dec9"
-		"00000000000000000000101000110111"
+		"00000000000000000000101010011011"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"Dec10"
-		"00000000000000000000101000111000"
+		"00000000000000000000101010011100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Mult1"
+		"00000000000000000000000100011111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Mult2"
+		"00000000000000000000000100100000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Mult3"
+		"00000000000000000000000100100001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Mult4"
+		"00000000000000000000101011111010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Mult5"
+		"00000000000000000000101011111011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Div1"
+		"00000000000000000000000100101001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Div2"
+		"00000000000000000000000100101010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Div3"
+		"00000000000000000000000100101011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Div4"
+		"00000000000000000000101101011110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Div5"
+		"00000000000000000000101101011111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Mfhi1"
+		"00000000000000000000000100110011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Mflo1"
+		"00000000000000000000000100111101"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
@@ -3020,7 +3100,7 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 216 560)(line_width 1))
 	)
 	(flipy)
-	(annotation_block (parameter)(rect 6120 -120 6464 2136))
+	(annotation_block (parameter)(rect 6120 -344 6464 2136))
 )
 (connector
 	(pt 2496 2136)

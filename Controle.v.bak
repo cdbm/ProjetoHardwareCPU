@@ -216,8 +216,8 @@ parameter Div4 = 32'd2910;
 parameter Div5 = 32'd2911;
 parameter Mfhi1 = 32'd307;
 parameter Mflo1 = 32'd317;
-reg [6:0] contaMult;
-reg [6:0] contaDiv;
+reg [5:0] contaMult;
+reg [5:0] contaDiv;
 
 //PC+4
 parameter pc4 = 32'd3;
@@ -3638,7 +3638,7 @@ parameter pc4 = 32'd3;
                     MuxBranch = 3'b011;
                     MuxMemoriaEnd = 3'd0;
                     IRWrite = 1'd0;
-                    RegWrite = 1'd0;
+                    RegWrite = 1'd1;
                     RegDst = 2'd2;
                     MuxULA1 = 3'd0;
                     ALUControl = 3'd0;
